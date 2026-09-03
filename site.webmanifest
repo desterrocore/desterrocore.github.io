@@ -1,0 +1,26 @@
+{
+  "name": "Lennon da Silva Rocha — Desterrocore",
+  "short_name": "Desterrocore",
+  "description": "Engenheiro backend sênior e produtor cultural. Sistemas distribuídos, cinema e infraestrutura cultural, de Florianópolis.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/img/desterrocore.jpg",
+      "sizes": "800x800",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

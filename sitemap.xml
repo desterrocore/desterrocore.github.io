@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Both language versions are served from the same file; the en-US one is
+     selected by ?lang=en and canonicalises to itself at runtime, so each gets
+     its own <url> with the full, reciprocal set of alternates. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://desterrocore.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desterrocore.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desterrocore.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://desterrocore.github.io/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://desterrocore.github.io/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desterrocore.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desterrocore.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://desterrocore.github.io/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
