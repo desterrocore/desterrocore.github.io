@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Desterrocore</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#090909">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/desterrocore.css">
+<style>
+  /* The spine is painted per band on the main page; the 404 is its own band. */
+  .notfound { position: relative; min-height: 100vh; min-height: 100svh; display: grid; align-content: center; }
+  .notfound::before {
+    content: ""; position: absolute; left: var(--bus-x); top: 0; bottom: 0;
+    width: 1px; background: var(--hair); pointer-events: none;
+  }
+  .notfound__code {
+    font-size: clamp(4.5rem, 22vw, 14rem);
+    font-weight: 800; font-stretch: 68%; line-height: .84; letter-spacing: -.045em;
+    color: transparent; -webkit-text-stroke: 1px rgba(231,223,207,.42);
+    text-shadow: 3px -2px 0 rgba(232,93,4,.34);
+    margin-bottom: clamp(20px, 3vw, 36px);
+  }
+  .notfound__log { color: var(--gray); line-height: 1.9; margin-bottom: clamp(24px, 3vw, 40px); }
+  .notfound__log b { color: var(--paper); font-weight: 400; }
+  .notfound__msg { font-size: var(--fs-lede); max-width: 46ch; margin-bottom: .6em; }
+  .notfound__msg--en { color: var(--gray); font-size: var(--fs-small); max-width: 52ch; }
+  .notfound__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: clamp(28px, 3.5vw, 44px); }
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<main class="notfound" data-ink="2">
+  <div class="wrap rail">
+    <p class="notfound__code" aria-hidden="true">404</p>
+
+    <div class="notfound__log mono">
+      <p><span class="term__prompt" aria-hidden="true">$</span> curl -sI desterrocore.github.io<span class="cursor" aria-hidden="true"></span></p>
+      <p><b>HTTP/2 404</b> &mdash; not found</p>
+      <p>rota inexistente / no such route</p>
+    </div>
+
+    <p class="notfound__msg" lang="pt-BR">Esta página não existe. Ou nunca existiu, ou foi movida sem redirect &mdash; o que, convenhamos, é um bug.</p>
+    <p class="notfound__msg notfound__msg--en" lang="en">This page does not exist. Either it never did, or it moved without a redirect &mdash; which, let us be honest, is a bug.</p>
+
+    <div class="notfound__actions">
+      <a class="btn btn--primary" href="/"><span lang="pt-BR">VOLTAR AO INÍCIO</span><span class="btn__arrow" aria-hidden="true">&#8594;</span></a>
+      <a class="btn" href="https://github.com/desterrocore" rel="noopener" target="_blank"><span>GITHUB</span><span class="btn__arrow" aria-hidden="true">&#8599;</span></a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
