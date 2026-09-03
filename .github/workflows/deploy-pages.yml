@@ -40,6 +40,9 @@ jobs:
           cp sitemap.xml _site/
           cp site.webmanifest _site/
           cp .nojekyll _site/
+          # Without this in the artifact, Pages drops the custom domain on
+          # every deploy and falls back to desterrocore.github.io.
+          cp CNAME _site/
           cp -r assets _site/
           echo "--- staged ---"
           find _site -type f | sort
