@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Allow the GITHUB_TOKEN to deploy to Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel a run that is already publishing.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      # The site is plain static HTML/CSS/JS — nothing to compile. We just
+      # stage the files that should actually be published and drop the rest
+      # (briefs, the 1.9 MB source artwork, repo meta) from the artifact.
+      - name: Stage site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp index.html _site/
+          cp 404.html _site/
+          cp robots.txt _site/
+          cp sitemap.xml _site/
+          cp site.webmanifest _site/
+          cp .nojekyll _site/
+          cp -r assets _site/
+          echo "--- staged ---"
+          find _site -type f | sort
+          echo "--- total size ---"
+          du -sh _site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
