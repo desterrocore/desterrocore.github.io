@@ -5,18 +5,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://desterrocore.github.io/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desterrocore.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://desterrocore.github.io/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://desterrocore.github.io/"/>
+    <loc>https://desterrocore.com.br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desterrocore.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desterrocore.com.br/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://desterrocore.com.br/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://desterrocore.github.io/?lang=en</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desterrocore.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://desterrocore.github.io/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://desterrocore.github.io/"/>
+    <loc>https://desterrocore.com.br/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desterrocore.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desterrocore.com.br/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://desterrocore.com.br/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

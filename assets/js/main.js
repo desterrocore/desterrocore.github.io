@@ -118,9 +118,11 @@
       window.history.replaceState(null, '', url.pathname + url.search + url.hash);
 
       var canonical = document.querySelector('[data-canonical]');
-      if (canonical) {
+      if (canonical && window.location.protocol.indexOf('http') === 0) {
+        /* Derived, not hard-coded: correct on the custom domain, on the
+           github.io fallback, and on a local preview. */
         canonical.setAttribute('href',
-          'https://desterrocore.github.io/' + (lang === DEFAULT_LANG ? '' : '?lang=' + lang));
+          window.location.origin + url.pathname + (lang === DEFAULT_LANG ? '' : '?lang=' + lang));
       }
     } catch (e) { /* older browsers: the URL simply stays as it is */ }
 
