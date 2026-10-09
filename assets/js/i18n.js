@@ -102,6 +102,8 @@ window.DESTERROCORE_I18N = {
     "culture.item7.tag3": "COMMUNITY",
     "culture.item7.years": "2024–2025",
     "culture.network.body": "An independent audiovisual production network in Santa Catarina, and the context several of these experiences grew out of. Cineclub programming, technical organization, environmental-cinema festivals, screenings, workshops, debates and audience formation in Garopaba, Florianópolis and Palhoça all ran through it. Not another entry on the list: the environment that held several of them up, with curatorship, environmental cinema, cultural education and territorial action.",
+    "culture.network.siteLead": " I also built their institutional site, on my own, at ",
+    "culture.network.siteTail": " — content, static site generator, and deployment, in the same technical model as this portfolio.",
     "culture.network.label": "NETWORK",
     "culture.network.name": "Pátria Grande Produções",
     "culture.realized.label": "DELIVERED",

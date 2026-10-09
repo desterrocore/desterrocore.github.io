@@ -248,6 +248,8 @@ The connection is particularly relevant to the portfolio because it situates my 
 
 Rather than presenting Pátria Grande simply as another isolated project, the site should treat it as part of the **production network and cultural environment** through which several of these experiences were developed.
 
+The institutional site is **https://patriagrande.com.br**. Lennon is its **sole developer** (content pipeline, static generator, deploy). The Pátria Grande footer credits **desterrocore** with a link back to this portfolio — mirror that relationship in the REDE block on the culture section.
+
 ---
 
 # 8. Projects in Development / Future Execution
