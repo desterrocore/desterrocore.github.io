@@ -167,16 +167,6 @@ I worked with:
 
 ---
 
-### FICA Garopaba — Festival Internacional de Cinema Ambiental
-
-**Garopaba / SC · 2022–2026**
-
-Technical-cultural production, projection and technical coordination across every edition of the festival from 2022 through 2026.
-
-My work concentrates on the technical infrastructure of sessions: projection, setup, operation and coordinating what has to work on the day — within a free environmental-cinema festival with screenings, debates, workshops and circulation through other territories in Santa Catarina.
-
----
-
 ### Cineclube Marighella
 
 **Palhoça / SC · 2024**
@@ -204,6 +194,32 @@ This experience is an important part of the bridge between my technical backgrou
 
 ---
 
+### Cine Retrata
+
+**Florianópolis / SC · 2025**
+
+Technical-cultural production, projection and technical coordination for free sessions built around documentaries and fact-based films, each followed by debate with guests — at the CIC and Bugio Trindade.
+
+---
+
+### FICA Garopaba — Festival Internacional de Cinema Ambiental
+
+**Garopaba / SC · 2022–2026**
+
+Technical-cultural production, projection and technical coordination across every edition of the festival from 2022 through 2026.
+
+My work concentrates on the technical infrastructure of sessions: projection, setup, operation and coordinating what has to work on the day — within a free environmental-cinema festival with screenings, debates, workshops and circulation through other territories in Santa Catarina.
+
+---
+
+### FLACA — Festival Latino-Americano de Cinema Ambiental
+
+**Florianópolis / SC · 2025–2026**
+
+Technical-cultural production, projection and technical coordination in the 2025 and 2026 editions of this free Latin American environmental-cinema festival — sessions across public venues, municipal schools and independent circuits, always closing with debate.
+
+---
+
 ### Escola Popular de Tecnologia — Instituto Caeté
 
 **2024–2025 · Co-founder**
@@ -219,22 +235,6 @@ My participation included:
 - technology education for low-income communities
 
 This is one of the clearest examples of my two professional axes meeting directly: software and technical knowledge used as cultural and educational infrastructure.
-
----
-
-### Cine Retrata
-
-**Florianópolis / SC · 2025**
-
-Technical-cultural production, projection and technical coordination for free sessions built around documentaries and fact-based films, each followed by debate with guests — at the CIC and Bugio Trindade.
-
----
-
-### FLACA — Festival Latino-Americano de Cinema Ambiental
-
-**Florianópolis / SC · 2025–2026**
-
-Technical-cultural production, projection and technical coordination in the 2025 and 2026 editions of this free Latin American environmental-cinema festival — sessions across public venues, municipal schools and independent circuits, always closing with debate.
 
 ---
 
