@@ -1,9 +1,9 @@
-# desterrocore.github.io
+# desterrocore.com.br
 
 Personal portfolio of **Lennon da Silva Rocha** — senior backend engineer and cultural
 producer from Florianópolis (Desterro), Santa Catarina, Brazil.
 
-Live: <https://desterrocore.github.io/>
+Live: <https://desterrocore.com.br>  ·  fallback: <https://desterrocore.github.io/> (301s to the domain)
 
 ---
 
@@ -29,8 +29,8 @@ text through the table in `assets/js/i18n.js`; switching back restores the pt-BR
 captured from the DOM at load, which means the two languages can never drift apart in
 key coverage.
 
-- `https://desterrocore.github.io/` → pt-BR
-- `https://desterrocore.github.io/?lang=en` → en-US (shareable, also honoured by `#en`)
+- `https://desterrocore.com.br/` → pt-BR
+- `https://desterrocore.com.br/?lang=en` → en-US (shareable, also honoured by `#en`)
 
 The choice is remembered in `localStorage`. With JavaScript disabled the site still
 works completely, in Portuguese.
@@ -73,15 +73,34 @@ GitHub Pages.
 
 1. The repository must be named **`desterrocore.github.io`** — that is what makes it a
    GitHub Pages *user site* served from the bare root. Any other name publishes it under
-   a subpath, and every absolute URL here (canonical, hreflang, `sitemap.xml`,
-   `site.webmanifest`, the root-relative paths in `404.html`) assumes the root.
+   a subpath, and every absolute URL here (canonical, hreflang, `sitemap.xml`, the
+   root-relative paths in `404.html`) assumes the root.
 2. GitHub → *Settings* → *Pages* → *Build and deployment* → *Source*: **GitHub Actions**.
+3. The custom domain. Full DNS record table and the order to do it in are in
+   `TODO.md`; the short version is A + AAAA records at the apex pointing at GitHub's
+   four load balancers, a `www` CNAME to `desterrocore.github.io.`, then
+   *Settings* → *Pages* → *Custom domain*, then *Enforce HTTPS* once the certificate
+   has been issued.
+
+### The `CNAME` file
+
+`CNAME` at the repo root holds `desterrocore.com.br`, and the workflow copies it into
+the published artifact. **Do not delete it.** With GitHub Actions publishing — unlike
+branch publishing, where GitHub commits the file for you — a deploy whose artifact has
+no `CNAME` silently unbinds the custom domain and the site reverts to
+`desterrocore.github.io`.
+
+To move to a different domain later, three places need editing: `CNAME`, the absolute
+URLs in `index.html` (canonical, the three `hreflang` links, `og:url`, `og:image`,
+`twitter:image` and the two JSON-LD fields), and `sitemap.xml` + `robots.txt`. The
+language switch does not: it derives the origin from `window.location` at runtime.
 
 ## Repository layout
 
 ```
 index.html                    the site
 404.html                      not-found page, same design language
+CNAME                         the custom domain — staged into every deploy
 assets/css/desterrocore.css   design system
 assets/js/i18n.js             en-US string table
 assets/js/main.js             behaviour

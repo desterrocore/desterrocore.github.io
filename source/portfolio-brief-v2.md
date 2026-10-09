@@ -167,22 +167,13 @@ I worked with:
 
 ---
 
-### Cineclube Vozes Veladas
+### FICA Garopaba — Festival Internacional de Cinema Ambiental
 
-**Florianópolis / SC · 2023–2024**
+**Garopaba / SC · 2022–2026**
 
-Participation in the organization and technical-cultural execution of cineclub sessions and educational activities.
+Technical-cultural production, projection and technical coordination across every edition of the festival from 2022 through 2026.
 
-My work included support for:
-
-- screenings
-- session organization
-- workshops
-- formative activities
-- audiovisual mediation
-- public discussion
-
-The project was part of the period in which my cultural work in Santa Catarina became more continuous and closely connected to the network around **Pátria Grande Produções**.
+My work concentrates on the technical infrastructure of sessions: projection, setup, operation and coordinating what has to work on the day — within a free environmental-cinema festival with screenings, debates, workshops and circulation through other territories in Santa Catarina.
 
 ---
 
@@ -228,6 +219,22 @@ My participation included:
 - technology education for low-income communities
 
 This is one of the clearest examples of my two professional axes meeting directly: software and technical knowledge used as cultural and educational infrastructure.
+
+---
+
+### Cine Retrata
+
+**Florianópolis / SC · 2025**
+
+Technical-cultural production, projection and technical coordination for free sessions built around documentaries and fact-based films, each followed by debate with guests — at the CIC and Bugio Trindade.
+
+---
+
+### FLACA — Festival Latino-Americano de Cinema Ambiental
+
+**Florianópolis / SC · 2025–2026**
+
+Technical-cultural production, projection and technical coordination in the 2025 and 2026 editions of this free Latin American environmental-cinema festival — sessions across public venues, municipal schools and independent circuits, always closing with debate.
 
 ---
 
